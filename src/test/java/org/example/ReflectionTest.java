@@ -1,8 +1,8 @@
 package org.example;
 
-import org.example.annotation.Controller;
-import org.example.annotation.Service;
-import org.example.model.User;
+import org.example.reflection.study.annotation.Controller;
+import org.example.reflection.study.annotation.Service;
+import org.example.reflection.study.model.User;
 import org.reflections.Reflections;
 import org.junit.jupiter.api.Test;
 import org.slf4j.Logger;
@@ -47,7 +47,7 @@ public class ReflectionTest {
         User user = new User("userId", "name");
         Class<? extends User> clazz2 = user.getClass();
 
-        Class<?> clazz3 = Class.forName("org.example.model.User");
+        Class<?> clazz3 = Class.forName("org.example.reflection.study.model.User");
 
         logger.debug("clazz : [{}]", clazz);
         logger.debug("clazz2 : [{}]", clazz2);

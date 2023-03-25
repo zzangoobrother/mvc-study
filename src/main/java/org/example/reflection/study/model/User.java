@@ -1,4 +1,4 @@
-package org.example.model;
+package org.example.reflection.study.model;
 
 import java.util.Objects;
 
